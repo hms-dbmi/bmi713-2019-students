@@ -1,0 +1,42 @@
+---
+title: "Normal Distribution Plot"
+author: "Nils Gehlenborg"
+date: "9/10/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sampling Data from a Normal Distribution
+
+The following snippet samples 1000 values from a Normal distribution and plots them.
+
+```{r}
+normal <- rnorm(1000)
+plot(normal)
+```
+
+Plot the probability distribution with the `density` command.
+
+```{r}
+plot(density(normal))
+```
+
+## Sampling Data from a Uniform Distribution
+
+Repeat the above steps for a uniform distribution, using the `runif` command.
+
+The following snippet samples 1000 values from a uniform distribution and plots them.
+
+```{r}
+# ...
+```
+
+Plot the probability distribution with the `density` command.
+
+```{r}
+# ...
+```
+
